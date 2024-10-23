@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.slider {
+  position: relative;
+  text-align: center; /* Căn giữa nội dung bên trong slider */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto; 
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+}
+
+.counter {
+  margin-left: 10px; /* Khoảng cách giữa hình ảnh và số đếm */
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 10px; 
+}
+
+.button button {
+  padding: 10px 20px; 
+  margin: 0;
+  border-radius: 5px;
+  background-color: #3dc45c;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hiệu ứng hover cho từng nút */
+.button button:hover {
+  transform: scale(1.05);
+}
+
+/* Định kiểu cho nút bị vô hiệu hóa */
+.button button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
